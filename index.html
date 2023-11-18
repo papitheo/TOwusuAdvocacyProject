@@ -1,186 +1,548 @@
 <!DOCTYPE html>
-      <html lang="en">
+<html lang="en">
 
 <head>
   <!--This attribute-value pair tells the browser that the document is encoded using UTF-8, which is a character encoding that can represent a wide range of characters from various languages and scripts, making it suitable for multilingual and international content.-->
-      <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <!--  Specifies the tittle of your webpage. Appears in the task bar on top of webpage-->
-      <title>Edwom</title> 
+  <title>Edwom</title>
   <!--  Links css file to the html file-->
-      <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  
-<body>
 
+<body>
   <!-- Header section-->
-<section id="Header">
-  <div class="header-container">
-    <div class="navBar">
-      <h1>Menu</h1>
-      <div class="navList">
-        <ul>
-          <li><a href="#Category">Categories</a></li>
-          <li><a href="#Deals">Deals</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#News">News</a></li>
-          <li><a href="#Article">Article</a></li>
-        </ul>
+  <section id="Header">
+    <div class="header-container">
+      <div class="navBar">
+        <button id="theme-button">
+          Toggle Dark Mode
+        </button>
+        <div class="navList">
+          <ul>
+            <li><a href="#Category">Categories</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Article">Article</a></li>
+            <button id = "Reduce-Motion"> Reduce Motion </button> 
+          </ul>
+           
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!--End header section-->
 
-  
+
   <!--  Hero section-->
-<section id = "hero">
-  <div class= "hero container">
-    <div>
-      <h1>
-     Hello, there...
-      </h1>
-<!-- buids a link but does route to a new page. Instead, it works within that same page. Eg. clicking such link scroll the page back to the top. It could be in the for a button-->
-    <a href= "#Category" type="Button", class= "cta">  Explore </a>
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>
+          Hello, there...
+        </h1>
+        <!-- buids a link but does route to a new page. Instead, it works within that same page. Eg. clicking such link scroll the page back to the top. It could be in the for a button-->
+        <a href="#Category" type="Button" , class="cta"> Explore </a>
+      </div>
     </div>
-  </div>
-</section>
-<!--  end of hero section-->
-  
+  </section>
+  <!--  end of hero section-->
+
   <!-- Category Section  -->
   <section>
-    <div class="categoryTitle">
+    <div class="categoryTitle revealable">
       <div>
         <h3 id="Category">Shop by Category</h3>
         <h6 class="subHeader">Visit Our Shop to see affordable products</h6>
       </div>
     </div>
 
-  <div id="Category">
-    <div class="disaplayStyle">
-      <div class= "containerbc">
-        <div class="img-custom">
-          <img src="img/fruit.jpg">
+    <div id="Category" class = "revealable">
+      <div class="disaplayStyle">
+        <div class="containerbc">
+          <div class="img-custom">
+            <img src="img/fruit.jpg">
+          </div>
+          <h3>Fruits</h3>
         </div>
-        <h3>Fruits</h3>
       </div>
+
+      <div class="disaplayStyle">
+        <div class="containerbc">
+          <div class="img-custom">
+            <img src="img/vegitables.jpg">
+          </div>
+          <h3>Vegies</h3>
+        </div>
+      </div>
+
+      <div class="disaplayStyle">
+        <div class="containerbc">
+          <div class="img-custom">
+            <img src="img/nuts.jpg">
+          </div>
+          <h3>Nuts</h3>
+        </div>
+      </div>
+
+      <div class="disaplayStyle">
+        <div class="containerbc">
+          <div class="img-custom">
+            <img src="img/salmon.jpg">
+          </div>
+          <h3>Fish</h3>
+        </div>
+      </div>
+
     </div>
-
-    <div class="disaplayStyle">
-      <div class= "containerbc">
-        <div class="img-custom">
-          <img src="img/vegitables.jpg">
-        </div>
-        <h3>Vegies</h3>
-      </div>
-    </div> 
-
-    <div class="disaplayStyle">
-      <div class= "containerbc">
-        <div class="img-custom">
-          <img src="img/nuts.jpg">
-        </div>
-        <h3>Nuts</h3>
-      </div>
-    </div> 
-
-    <div class="disaplayStyle">
-      <div class= "containerbc">
-        <div class="img-custom">
-          <img src="img/salmon.jpg">
-        </div>
-        <h3>Fish</h3>
-      </div>
-    </div> 
-    
-  </div>
-</section>
+  </section>
   <!--End Category Section  -->
 
-  <!-- Categories Section  -->
 
-  
-  
-  <!-- End Categories Section  -->
-<section>
-  <div id="Categories">
+
+
+
+  <!-- Categories Section  -->
+  <section>
+    <div id="Categories" class="revealable">
+      <div id="h1font">
+        <h1>
+          Fruits
+        </h1>
+      </div>
+      <div class="pro-container">
+        <div class = "pro-1">
+          <img src = "img/fruits/apple 2.jpg">
+          <div class="description">
+            <span>Apple</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/apple.jpg">
+          <div class="description">
+            <span>Apple</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/banana.jpg">
+          <div class="description">
+            <span>Banana</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/coconut 2.jpg">
+          <div class="description">
+            <span>Coconut</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/guava 2.jpg">
+          <div class="description">
+            <span>Guava</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/i_dont_know.jpg">
+          <div class="description">
+            <span>Avocado</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/lemon.jpg">
+          <div class="description">
+            <span>Lemon</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fruits/lime.jpg">
+          <div class="description">
+            <span>Lemon</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Categories Section -->
+
+
+
+
+  <!-- Deals section Section -->
+  <section id="Deals" class="revealable">
+    <div id="h1font">
+      <h1>Vegies</h1>
+    </div>
+  <div class="pro-container">
+    <div class = "pro-1">
+        <img src = "img//vegies/lettuce.jpg">
+      <div class="description">
+        <span>Lettuce</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img/vegies/carrot.jpg">
+      <div class="description">
+        <span>Carrot</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/cucumber.jpg">
+      <div class="description">
+        <span>Cucumber</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/greeen bell peper.jpg">
+      <div class="description">
+        <span>Green Bell Pepper</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/okro.jpg">
+      <div class="description">
+        <span>Okro</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/onions.jpg">
+      <div class="description">
+        <span>Onion</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/red bell peper.jpg">
+      <div class="description">
+        <span>Red Bell Pepper</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    <div class = "pro-1">
+      <img src = "img//vegies/tomato.jpg">
+      <div class="description">
+        <span>Tomato</span>
+        <h5>$2.99</h5>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Deals Section -->
+
+  <!-- Products  Section -->
+<section id="Products" class="revealable">
+  <div id="Categories" class="revealable">
     <div id="h1font">
       <h1>
-        Categories
+        Nuts
       </h1>
-    <div id="h3font">
-      <h3>
-    Welcome to our diverse content platform, where a world of categories awaits your exploration. We take pride in curating a wide range of topics to cater to your varied interests. Whether you're passionate about science, technology, art, health, travel, or more, we've organized our content into categories to make your browsing experience effortless. Dive into the 'Science' category to satisfy your intellectual curiosity with the latest discoveries and breakthroughs. Or, journey to the 'Travel' category to explore breathtaking destinations and travel tips. If you're an art enthusiast, our 'Arts & Culture' category will ignite your creativity. 'Health & Wellness' offers tips and insights to boost your well-being. With numerous categories to choose from, our platform provides a wealth of knowledge and inspiration. Experience a user-friendly interface, customizable feeds, and a world of categories, ensuring that you can easily find content that speaks to you.
-        <a href="https://youtube.com/shorts/MrCBXR2w2G4?si=-9MT373qOUMY0ter"> Categories</a>
-      </h3>
     </div>
+    <div class="pro-container">
+      <div class = "pro-1">
+        <img src = "img/nuts/almond.jpg">
+        <div class="description">
+          <span>Almond</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/Brazil.jpg">
+        <div class="description">
+          <span>Brazil</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/cashews.jpg">
+        <div class="description">
+          <span>Cashew</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/Hazelnuts.jpg">
+        <div class="description">
+          <span>Hazelnut</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/Macadamia.jpg">
+        <div class="description">
+          <span>Macadamia</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/pecans.jpg">
+        <div class="description">
+          <span>Pecans</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/Pistachios.jpg">
+        <div class="description">
+          <span>Pistachios</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
+      <div class = "pro-1">
+        <img src = "img/nuts/walnut.jpg">
+        <div class="description">
+          <span>Walnut</span>
+          <h5>$2.99</h5>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-
-
-  
-  <!-- Deals section Section -->
-  <section id="Deals">
-    <div id="h1font">
-      <h1>Deals Section</h1>      
-    </div>
-      <div id="h3font">
-        <h3>Welcome to our fantastic deals platform, where incredible savings are just a click away. Our website or app is a treasure trove of discounts on a wide range of products and services. From electronics to fashion, home goods to travel experiences, we've scoured the web to bring you exclusive offers and irresistible bargains. Tech enthusiasts can enjoy substantial discounts on the latest gadgets, while fashionistas can revamp their wardrobes without breaking the bank. Home improvement enthusiasts can find incredible deals on appliances, furniture, and more. Travelers can explore jaw-dropping discounts on vacation packages and hotels. Plus, our daily deals section showcases limited-time offers that'll make your day. With a user-friendly interface, secure payment options, and speedy delivery, we're your go-to destination for incredible deals. Start exploring our platform and watch your savings soar.<a href="https://www.youtube.com/embed/I1u9RNmfTuE?si=K3ivk0H-916U6BJf">Deals</a> 
-        </h3> 
-      </div>
-  </section>
-  <!-- End Deals Section -->
-  
-  <!-- Products  Section -->
-  <div id="Products">
-    <div id="h1font">
-      <h1>Products Section</h1>
-    </div>
-    <div id="h3font">
-        <h3>
-        Step into the world of our e-commerce app, where a universe of products awaits. From the latest gadgets to timeless fashion, we offer an extensive range of items to cater to your every need. Tech enthusiasts can explore a vast selection of smartphones, tablets, and accessories, including cutting-edge features and designs. For fashion-forward individuals, our app boasts a curated collection of clothing, shoes, and accessories, ensuring you stay stylish year-round. Home and living products such as furniture, appliances, and decor pieces are at your fingertips. Don't forget our health and wellness section, which offers everything from fitness equipment to dietary supplements. The kids' corner features toys, books, and more for the little ones. With user-friendly search and filter options, secure payment methods, and swift delivery, our e-commerce app is your one-stop shop for quality products. Explore the app, and discover a world of possibilities.
-          <a href="https://www.youtube.com/embed/ijQDxwUGIOg?si=jVCfwNz8UDX5ZHuf">Products</a>
-        </h3> 
-      </div>
-   </div>
-  </div>
   <!-- End Products  Section -->
-  
+
   <!-- News Section -->
-  <section id="News">
-    <div id="h1font">
-      <h1>News Section</h1>
-    </div>
-    <div id="h3font">
-      <h3>
-        Stay well-informed with our comprehensive news platform, where a wide array of news categories keeps you updated on the latest developments around the world. We organize our news content into various categories, ensuring you can explore topics that pique your interest. Our 'Politics' section delivers in-depth coverage of political affairs, while 'Business' provides insights into the corporate world. Dive into 'Technology' to stay updated on the latest tech trends, or explore 'Entertainment' for all things showbiz. For health and well-being, check out 'Health & Lifestyle,' and for global events and crises, 'World News' has you covered. With our interactive maps, multimedia content, and expert analysis, you'll get a comprehensive view of every news category. We offer a user-friendly platform, customizable news feeds, and easy sharing options, making it simple to delve into the categories that matter most to you.
-        <a href="https://www.youtube.com/embed/u0E9O3Lb9Lg?si=OPGC7LHt6VLsg-1U"> News</a>
-      </h3>
+  <section id="News" class="revealable">
+    <div id="Categories" class="revealable">
+      <div id="h1font">
+        <h1>
+          Fish
+        </h1>
+      </div>
+      <div class="pro-container">
+        <div class = "pro-1">
+          <img src = "img/fish/Cod.jpg">
+          <div class="description">
+            <span>Cod</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Fresh Salmon Fillet.jpg">
+          <div class="description">
+            <span>Salmon</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Halibut.jpg">
+          <div class="description">
+            <span>Halibut</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Mackerel.jpg">
+          <div class="description">
+            <span>Mackerel</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Smoked Trout.jpg">
+          <div class="description">
+            <span>Trout</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Tilapia.jpg">
+          <div class="description">
+            <span>Tilapia</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Tuna.jpg">
+          <div class="description">
+            <span>Tuna</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/fish/Halibut.jpg">
+          <div class="description">
+            <span>Halibut</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- End News Section -->
 
-  
+
   <!-- Articles section Section -->
-  <section id="Article">
-    <div id="h1font">
-      <h1>Articles Section</h1>      
-   </div>
-    <div id="h3font">
-      <h3>Explore a world of knowledge and inspiration through our vast array of article categories. Our platform is a treasure trove of content, thoughtfully organized into diverse categories to cater to your interests. Whether you're passionate about science, technology, lifestyle, travel, or more, you'll find a rich collection of articles to satisfy your curiosity. Dive into the 'Science' category to delve into the wonders of the universe and groundbreaking discoveries. 'Technology' offers insights into the latest tech trends and innovations. For lifestyle enthusiasts, 'Health & Wellness' provides tips for a balanced life, while 'Arts & Culture' ignites your creativity. With an abundance of categories, our platform ensures that you have access to knowledge and ideas that resonate with you. Enjoy a user-friendly interface, customizable feeds, and an expansive range of article categories to feed your thirst for learning and exploration. <a href="https://www.cnn.com/2023/06/06/business/grocery-sales-prices/index.html">Article</a> </h3> 
+  <section id="Article" class="revealable">
+    <div id="Categories" class="revealable">
+      <div id="h1font">
+        <h1>
+          Grains
+        </h1>
+      </div>
+      <div class="pro-container">
+        <div class = "pro-1">
+          <img src = "img/grains/Barley.jpg">
+          <div class="description">
+            <span>Barley</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/Corn.jpg">
+          <div class="description">
+            <span>Corn</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/Oats.jpg">
+          <div class="description">
+            <span>Oats</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/rice.jpg">
+          <div class="description">
+            <span>Rice</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/wheat.jpg">
+          <div class="description">
+            <span>Wheat</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/Corn.jpg">
+          <div class="description">
+            <span>Corn</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/rice.jpg">
+          <div class="description">
+            <span>Rice</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+        <div class = "pro-1">
+          <img src = "img/grains/wheat.jpg">
+          <div class="description">
+            <span>Wheat</span>
+            <h5>$2.99</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- Articles section Section -->
+  <!-- End Articles section Section -->
 
+  <!--Petition Section-->
+  <div class="petition revealable" id="petition">
+    
+    <div class = "petition-title">
+      <h2>Sign Our Petition 📢</h2>
+      <h3>Food For All</h3>
+    </div>
+    
+    <div class="petition-container">
+
+      <div class="petition-para">
+        <p>
+          Participating in this movement to make food more affordable and available to low-income families is not just an
+          act of compassion but a collective responsibility. 
+Access to affordable and nutritious food should be a
+          fundamental right extended to every individual, regardless of their financial circumstance. By actively
+          engaging in this cause, you contribute to a positive change within our communities. The
+          issue of food affordability has far-reaching effects on public health and well-being, making it essential that
+          we advocate for policies and initiatives aimed at improving food security for vulnerable families. Joining
+          this movement means addressing systemic inequalities, supporting local food systems, and raising awareness
+          about the critical importance of equitable access to food resources. Together, we can work toward building a
+          more inclusive and compassionate society where no one goes hungry due to financial constraints.
+        </p>
+        <div>
+          <p>
+            Follow this link to read more about my <a href="https://www.foodforpeople.org">Advocacy Project</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="signatures revealable">
+        <p>🖊️ Noah from Spokane supports this.</p>
+        <p>🖊️ Clinton from Califonia supports this.</p>
+        <p>🖊️ Nana from Seattle supports this.</p>
+      </div>
+
+    
+      
+
+    </div>
+    <div id="counter">
+      <p>🖊️ 3 people have signed this petition and support this cause.</p>
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition" class = "revealable">
+      <!-- inputs go here -->
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required placeholder="Theophilus Owusu">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="jsmith@gmail.com">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="Spokane">
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" placeholder="Ghana">
+
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message" placeholder="Your petition"></textarea>
+    </form>
+    <!--- Sign Now Button --->
+    <div>
+      <button id="sign-now-button">Sign Now</button>
+    </div>
+    <!--- End Sign Now Button --->
+    <!-- End Petiton Section-->
+  </div>
+  
   <!--Video Section-->
-  <section class="Video">
+  <section id="Video" class="revealable">
+    <div class = "vid-container">
       <iframe src="https://www.youtube.com/embed/0NYanSQoWb4?si=os0a0vlcLVm2lNjt" width="400" height="400"></iframe>
+    </div>
+    <div class = "vid-container">
       <iframe src="https://www.youtube.com/embed/IvqfEiyRTjw?si=3K2HOMR39xeb8lda" width="400" height="400"></iframe>
+    </div>
+    <div class = "vid-container">
       <iframe src="https://www.youtube.com/embed/RPZ0EGRFaHU?si=HXfvmsE1onMOedWn" width="400" height="400"></iframe>
+    </div>
+    <div class = "vid-container">
       <iframe src="https://www.youtube.com/embed/nTR_XOKOFB0?si=DTpvriPgOmsdze_d" width="400" height="400"></iframe>
-  <section>
-  <!--End Video Section-->
+    </div>
+    <section>
+      <!--End Video Section-->
+
+
+
+      <script src="index.js"></script>
 </body>
 
 </html>
